@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:id="@+id/dynamicContent"
+        android:orientation="vertical"
+        android:background="@drawable/dashboard_bg"
+
+        >
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:elevation="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/bottonNavBar"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom"
+        >
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+
+
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="New Booking"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/plusicon1"
+
+                android:id="@+id/newbooking"/>
+
+            <RadioButton
+                android:id="@+id/prevbooking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/recents_icon"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="Previous Booking"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/profile"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_profile"
+                android:textStyle="bold"
+                android:text="Profile"/>
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/backtomenu"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/backicon"
+                android:textStyle="bold"
+                android:text="return to menu"/>
+
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>

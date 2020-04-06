@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/newbookpg_bg"
+    android:id="@+id/newbooking_bg"
+    tools:context=".NewbookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+
+        <EditText
+            android:id="@+id/car_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Type"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:layout_marginLeft="50dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="2 wheeler"
+                android:textStyle="bold"
+                android:textColor="@color/pass_font"
+                android:textColorHint="@color/pass_font"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4 wheeler"
+                android:textStyle="bold"
+                android:textColor="@color/pass_font"
+                android:textColorHint="@color/pass_font"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <EditText
+            android:id="@+id/car_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle No."
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/im_carNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+
+            android:src="@drawable/numberplteblack1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <EditText
+            android:id="@+id/car_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Vehicle Model"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <EditText
+            android:id="@+id/dateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="From"
+            android:onClick="PickDate_from"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:id="@+id/dateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="To"
+            android:onClick="PickDate_to"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/imaDate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+
+           android:background="@color/page3_button"
+
+            android:src="@drawable/calendarfinal"
+            tools:src="@drawable/calendarfinal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <EditText
+            android:id="@+id/timeFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="From"
+            android:onClick="PickTime_from"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:id="@+id/timeTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="To"
+            android:onClick="PickTime_to"
+            android:textStyle="bold"
+            android:textColor="@color/pass_font"
+            android:textColorHint="@color/pass_font"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/im_time"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:background="@color/page3_button"
+            android:src="@drawable/clock_final"
+            tools:src="@drawable/clock_final"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="170dp"
+        android:orientation="vertical">
+
+
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/locationfinal"
+           android:background="@color/page3_button"
+           android:id="@+id/location_btn"
+           android:onClick="location"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

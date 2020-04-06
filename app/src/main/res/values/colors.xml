@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB0606</color>
+    <color name="colorPrimaryDark">#BE0313</color>
+    <color name="colorAccent">#F2FF0359</color>
+    <color name="page1_button_bg">#D55E5D5D</color>
+    <color name="page1_button_bg1">#D5242121</color>
+    <color name="page2_button_font">#FAFDFCFC</color>
+    <color name="page3_button">#02FDFCFC</color>
+    <color name="pass_font">#D3860606</color>
+    <color name="prevlist">#12F1260A</color>
+    <color name="navbar">#FDFD085D</color>
+    <color name="rent_button">#F3862F06</color>
+    <color name="button_br">#FCAE2C</color>
+
+</resources>
