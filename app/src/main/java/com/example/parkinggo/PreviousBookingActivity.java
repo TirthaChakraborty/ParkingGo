@@ -88,7 +88,7 @@ public class PreviousBookingActivity extends Dashboard {
 
 //        }
         ft.commit();
-        realm.close();
+
 
     }
 

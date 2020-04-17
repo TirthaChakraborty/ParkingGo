@@ -98,7 +98,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         public MyViewHolder(@NonNull View itemView,OnItemClickListener listener) {
             super(itemView);
             //carNo = itemView.findViewById(R.id.car_Number);
-            carMod=itemView.findViewById(R.id.car_model);
+            carMod=itemView.findViewById(R.id.carmod);
             item=itemView.findViewById(R.id.background);
             bookdate=itemView.findViewById(R.id.date);
             mitem=listener;

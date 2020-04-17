@@ -21,7 +21,7 @@
 
             android:ellipsize="end"
             android:lines="1"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
             android:layout_below="@id/carmod"
             android:layout_margin="10dp"
             android:text="Date"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="42sp"
             android:layout_toRightOf="@id/dateLabel"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="14sp" />
 
 
